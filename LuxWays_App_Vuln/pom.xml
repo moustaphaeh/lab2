@@ -37,6 +37,14 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.user.deploy</groupId>
+            <artifactId>deploy-jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>/home/mad/Bureau/A06/log4j-lita/LuxWays_App_Vuln/deploy.jar</systemPath>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>

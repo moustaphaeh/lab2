@@ -23,8 +23,8 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.println("<html><body>");
 
-        if(userName.equals("admin") && password.equals("password")){
-            out.println("Welcome Back Admin");
+        if(userName.equals("lita") && password.equals("lita")){
+            out.println("Bienvenue sur le site de LITA");
         }
         else{
 
@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
             Logger logger = LogManager.getLogger(com.example.log4shell.log4j.class);
             logger.error(userName);
 
-            out.println("<code> the password you entered was invalid, <u> we will log your information </u> </code>");
+            out.println("<code> Le mot de passe ou le nom d'utilisateur que vous avez saisi est incorrect, <u> nous sauvegardons vos informations. </u> </code>");
         }
     }
 
