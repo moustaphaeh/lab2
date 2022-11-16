@@ -42,7 +42,7 @@
             <artifactId>deploy-jar</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>/home/mad/Bureau/A06/log4j-lita/LuxWays_App_Vuln/deploy.jar</systemPath>
+            <systemPath>/home/mad/Documents/log4j-lita/LuxWays_App_Vuln/deploy.jar</systemPath>
         </dependency>
 
 
